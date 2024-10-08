@@ -82,9 +82,9 @@ body {
 }
 
 .team-image {
-    width: 220px;
-    height: 220px;
-    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 400%;
     object-fit: cover;
     border: 2px solid #2D5542;
 }
@@ -95,13 +95,13 @@ body {
 }
 
 .member-info h2 {
-    font-size: 18px;
-    color: #333;
+    font-size: 22px;
+    color: #af3d3d;
     font-weight: bold;
 }
 
 .member-info p {
-    color: #666;
+    color: #060606;
 }
 
 .logo-container {
