@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHub Submissions</title>
+    <link rel="stylesheet" href="submissions.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="PortfolioHub Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="userdashboard.html">DashBoard</a></li>
+                    <li><a href="upload.html">Upload Project</a></li>
+                    <li><a href="#">Submissions</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img src="studentavatar.png" alt="Profile Avatar">
+                <a href="home.html">
+                    <button class="logout-btn">Logout</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <form action="submit_project" method="POST">
+            <table id="projectTable">
+                <thead>
+                    <tr>
+                        <th>S No</th>
+                        <th>Project Name</th>
+                        <th>Language</th>
+                        <th>Team Size</th>
+                        <th>Review</th>
+                        <th>Submit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" name="project_name[]" placeholder="Enter project name" required></td>
+                        <td>
+                            <select name="language[]" required>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="C++">C++</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="team_size[]" placeholder="Enter team size" required></td>
+                        <td><button type="button" class="review-btn">Review</button></td>
+                        <td><button type="submit" class="submit-btn">Submit</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" name="project_name[]" placeholder="Enter project name"></td>
+                        <td>
+                            <select name="language[]">
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="C++">C++</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="team_size[]" placeholder="Enter team size"></td>
+                        <td><button type="button" class="review-btn">Review</button></td>
+                        <td><button type="submit" class="submit-btn">Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <button type="submit" class="submit-btn">Submit Projects</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #e0eafc, #cfdef3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eda7a7;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #d4e0ff;
+    border-radius: 5px;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #a3c0ff;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #d4e0ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #a3c0ff;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.search-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #6cb2ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #5593e6;
+}
+
+.student-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.student-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.student-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.student-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-name a {
+    font-size: 16px;
+    color: #6cb2ff;
+    text-decoration: none;
+}
+
+.project-name a:hover {
+    text-decoration: underline;
+}
+
+.total-submissions {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-submissions h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section p {
+    width: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    display: flex;
+    height: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.submitted {
+    background-color: #6cb2ff;
+}
+
+.not-submitted {
+    background-color: #ff7b7b;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.submitted-color {
+    background-color: #6cb2ff;
+}
+
+.not-submitted-color {
+    background-color: #ff7b7b;
+}

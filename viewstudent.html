@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View Student</title>
+    <link rel="stylesheet" href="viewstudent.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="PortfolioHub Logo" class="logo">
+            <nav>
+                <button class="nav-button">DashBoard</button>
+                <button class="nav-button">View Student</button>
+                <button class="nav-button">Review Project</button>
+                <button class="nav-button">Feedback</button>
+            </nav>
+            <div class="admin-section">
+                <span>Admin Id</span>
+                <img src="admindash.png" alt="Admin Profile" class="admin-profile">
+            </div>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <input type="text" placeholder="Search for Student" class="search-bar">
+            </div>
+
+            <div class="student-info">
+                <div class="student-avatar">
+                    <img src="student-avatar.png" alt="Student Avatar">
+                </div>
+                <div class="student-details">
+                    <p>Student Name:</p>
+                    <p>Id Number:</p>
+                </div>
+            </div>
+
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>S No</th>
+                        <th>Project Name</th>
+                        <th>View Project</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows can be dynamically inserted here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff;
+    color: #333;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #b0c0f9;
+    height: 60px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Nav Buttons as Form Buttons */
+.nav-buttons button {
+    padding: 10px 30px; /* Increased padding to make the buttons bigger */
+    margin: 0 15px;     /* Increased margin between buttons */
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: 2px solid #330b4d;
+    font-size: 18px;    /* Increased font size */
+    cursor: pointer;
+}
+
+.nav-buttons button {
+    padding: 5px 15px;
+    margin: 0 10px;
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: 2px solid #330b4d;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #b46ae1;
+    color: #fff;
+}
+
+/* Auth Buttons on Right */
+.auth-buttons button {
+    padding: 10px 10px; /* Increased padding for larger buttons */
+    font-size: 18px;     /* Increased font size */
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #b2ede0;
+    color: #000000;
+    border-radius: 5px;  /* Optional: Rounded corners */
+}
+
+.signup {
+    background-color: #b2ede0;
+    color: #000000;
+    border-radius: 5px;  /* Optional: Rounded corners */
+}
+
+
+/* Main Content */
+.welcome-section {
+    padding: 40px;
+    background-color: #E6E6FA;
+}
+
+.welcome-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-section .description {
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+
+.welcome-section img {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}

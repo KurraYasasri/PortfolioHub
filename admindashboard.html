@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHub</title>
+    <link rel="stylesheet" href="admindashboard.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="PortfolioHub Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="ViewStudent">View Student</a></li>
+                <li><a href="ReviewProject">Review Project</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="admindash.png" alt="Profile Avatar">
+            <a href="home.html">
+                <button class="logout-btn">Logout</button>
+            </a>
+        </div>
+    </div>
+</header>
+
+<h2 class="welcome-text">Welcome to PortfolioHub !!...</h2>
+
+<!-- Search Section -->
+<div class="search-section">
+    <form action="/search-student" method="POST">
+        <input type="text" name="studentName" placeholder="Search for Student" required>
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<!-- Search Results Section -->
+<div id="search-results" class="student-container">
+    <!-- Student information will be displayed here after the search -->
+</div>
+
+<div class="total-submissions">
+    <h3>Total Submissions</h3>
+    <div class="section">
+        <p>Sec-31</p>
+        <div class="progress-bar">
+            <div class="submitted" style="width: 80%;"></div>
+            <div class="not-submitted" style="width: 20%;"></div>
+        </div>
+    </div>
+    <div class="section">
+        <p>Sec-21</p>
+        <div class="progress-bar">
+            <div class="submitted" style="width: 90%;"></div>
+            <div class="not-submitted" style="width: 10%;"></div>
+        </div>
+    </div>
+    <div class="section">
+        <p>Sec-11</p>
+        <div class="progress-bar">
+            <div class="submitted" style="width: 70%;"></div>
+            <div class="not-submitted" style="width: 30%;"></div>
+        </div>
+    </div>
+    <div class="legend">
+        <div class="legend-item">
+            <span class="legend-color submitted-color"></span> Submitted
+        </div>
+        <div class="legend-item">
+            <span class="legend-color not-submitted-color"></span> Not Submitted
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simulating a response for the search student (replace with actual server-side code)
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevent form submission to the server for now
+        
+        const studentName = document.querySelector('input[name="studentName"]').value;
+        
+        // Simulating a student search result (replace with actual server response)
+        const studentData = {
+            name: "John Doe",
+            projectName: "AI Research Project",
+            projectLink: "https://example.com/john-doe-project",
+            photo: "studenticon.jpg"
+        };
+        
+        // Populate the search results container
+        const searchResults = document.getElementById('search-results');
+        searchResults.innerHTML = `
+            <div class="student-card">
+                <img src="${studentData.photo}" alt="Student">
+                <p class="student-name">${studentData.name}</p>
+                <p class="project-name"><a href="${studentData.projectLink}" target="_blank">${studentData.projectName}</a></p>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>

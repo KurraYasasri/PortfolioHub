@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHub Dashboard</title>
+    <link rel="stylesheet" href="userdashboard.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="PortfolioHub Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">DashBoard</a></li>
+                <li><a href="upload.html">Upload Project</a></li>
+                <li><a href="submissions.html">Submissions</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img src="studentavatar.png" alt="Profile Avatar">
+                <a href="home.html">
+                <button class="logout-btn">Logout</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <!-- Centered the Due Date box inside a wrapper -->
+            <div class="due-date-wrapper">
+                <a href="calendar.html">
+                    <div class="card due-date">
+                        <h3>
+                            <img src="calender.png" alt="Due Date" style="vertical-align: middle;"> <!-- Calendar Image -->
+                            <span style="vertical-align: middle;">Due Date</span> <!-- Due Date Text Beside Image -->
+                        </h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-container">
+                <div class="card progress">
+                    <h3>Your Progress</h3>
+                </div>
+                <div class="card overview">
+                    <h3>Project Overview</h3>
+                </div>
+                <div class="card team">
+                    <h3>Project Team</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

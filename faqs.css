@@ -1,0 +1,73 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* Header & Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #b0c0f9;
+    height: 60px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Nav Buttons as Form Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons button {
+    padding: 5px 15px;
+    margin: 0 10px;
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: 2px solid #330b4d;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #b46ae1;
+    color: #fff;
+}
+
+/* Auth Buttons on Right */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-buttons button {
+    padding: 5px 12px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #b2ede0;
+    color: #000000;
+}
+
+.signup {
+    background-color: #b2ede0;
+    color: #000000;
+}
+.background {
+    height: 90vh;
+    background: linear-gradient(to bottom, #D1C4E9, #E0F7FA, #FCE4EC);
+}

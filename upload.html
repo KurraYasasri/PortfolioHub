@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHub</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="PortfolioHub Logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Link to the userdashboard.html page -->
+                <li><a href="userdashboard.html">DashBoard</a></li>
+                <li><a href="#">Upload Project</a></li>
+                <li><a href="submissions.html">Submissions</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="studentavatar.png" alt="Profile Avatar">
+            <a href="home.html">
+            <button class="logout-btn">Logout</button></a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content Section -->
+<main>
+    <div class="container">
+        <h1>Upload Your Files</h1>
+        <div class="upload-section">
+            <!-- Drag and Drop area -->
+            <div class="drop-area" id="drop-area">
+                <p>Drag and drop the files here</p>
+                <input type="file" id="fileInput" multiple hidden>
+                <button id="browseFiles">Browse Files</button>
+            </div>
+            <!-- Buttons for actions -->
+            <div class="buttons">
+                <button id="uploadButton">Upload</button>
+                <button id="updateButton">Update</button>
+                <button id="deleteButton">Delete</button>
+            </div>
+        </div>
+        <div id="fileList"></div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

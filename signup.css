@@ -1,0 +1,144 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4c1f3;
+    color: #333;
+}
+
+
+/* Header & Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    height: 60px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Nav Buttons as Form Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons button {
+    padding: 5px 15px;
+    margin: 0 10px;
+    background-color: #cdcdf3;
+    color: #0f0f0f;
+    border: 2px solid #330b4d;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #b46ae1;
+    color: #fff;
+}
+
+/* Auth Buttons on Right */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-buttons button {
+    padding: 5px 12px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #b2ede0;
+    color: #000000;
+}
+
+.signup {
+    background-color: #b2ede0;
+    color: #000000;
+}
+/* Container styling */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form heading */
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Signup button */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #333;
+}
+
+/* Login link */
+.container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.container p a {
+    color: blue;
+    text-decoration: none;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}

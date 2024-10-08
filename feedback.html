@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioHub Feedback</title>
+    <link rel="stylesheet" href="feedback.css ">
+</head>
+<body>
+   
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="PortfolioHub Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="userdashboard.html">DashBoard</a></li>
+                <li><a href="upload.html">Upload Project</a></li>
+                <li><a href="submissions.html">Submissions</a></li>
+                <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img src="studentavatar.png" alt="Profile Avatar">
+                <a href="home.html">
+                <button class="logout-btn">Logout</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h2>Did our website make you smile today?</h2>
+
+        <!-- Form action points to a Java servlet -->
+        <form action="SubmitFeedbackServlet" method="POST">
+            <div class="emoji-section">
+                <label>
+                    <input type="radio" name="smile" value="happy" required>
+                    <span>😄</span>
+                </label>
+                <label>
+                    <input type="radio" name="smile" value="good">
+                    <span>😊</span>
+                </label>
+                <label>
+                    <input type="radio" name="smile" value="neutral">
+                    <span>😐</span>
+                </label>
+                <label>
+                    <input type="radio" name="smile" value="unimpressed">
+                    <span>🙄</span>
+                </label>
+            </div>
+
+            <h2>How’s the overall vibe of our PortfolioHub?</h2>
+            <div class="stars-section">
+                <label>
+                    <input type="radio" name="vibe" value="1" required>
+                    <span>⭐</span>
+                </label>
+                <label>
+                    <input type="radio" name="vibe" value="2">
+                    <span>⭐</span>
+                </label>
+                <label>
+                    <input type="radio" name="vibe" value="3">
+                    <span>⭐</span>
+                </label>
+                <label>
+                    <input type="radio" name="vibe" value="4">
+                    <span>⭐</span>
+                </label>
+                <label>
+                    <input type="radio" name="vibe" value="5">
+                    <span>⭐</span>
+                </label>
+            </div>
+
+            <div class="comment-section">
+                <h3>Additional Feedback:</h3>
+                <textarea name="comments" rows="5" placeholder="Share your thoughts..."></textarea>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
